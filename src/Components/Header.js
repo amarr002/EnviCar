@@ -9,18 +9,22 @@ function Header() {
 
   return (
     <Container>
-    <a>
-        <img src='/images/logo.svg' alt = ""/>
-    </a>
+    
+        {/* <img src='/images/logo.svg' alt = ""/> */}
+        <RightMenu>
+        <a href='#'>EnviCar</a>
+        </RightMenu>
+        
     <Menu>
-      <a href='#'>Model S</a>
-      <a href='#'>Model 3</a>
-      <a href='#'>Model X</a>
-      <a href='#'>Model Y</a>
+      <a href='#'>Find a car</a>
+      <a href='#'>Connect to services</a>
+      <a href='#'>EnviCar story</a>
+      <a href='#'>News</a>
+      <a href='#'>Contact Us</a>
      </Menu>
      <RightMenu>
-      <a href='#'>Shop</a>
-      <a href='#'>Tesla Account</a>
+      <a href='#'>Cart</a>
+      <a href='#'> Account</a>
       <CustomMenu onClick={() => setBurgerStatus(true)}/>
      </RightMenu>
      <BurgerNav show={BurgerStatus}>
